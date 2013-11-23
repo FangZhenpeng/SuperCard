@@ -21,6 +21,7 @@
 		1AB70632184090710000BDE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB70614184090710000BDE0 /* UIKit.framework */; };
 		1AB7063A184090710000BDE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AB70638184090710000BDE0 /* InfoPlist.strings */; };
 		1AB7063C184090710000BDE0 /* SuperCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7063B184090710000BDE0 /* SuperCardTests.m */; };
+		1AB70647184091130000BDE0 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB70646184091130000BDE0 /* PlayingCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1AB70637184090710000BDE0 /* SuperCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperCardTests-Info.plist"; sourceTree = "<group>"; };
 		1AB70639184090710000BDE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AB7063B184090710000BDE0 /* SuperCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardTests.m; sourceTree = "<group>"; };
+		1AB70645184091130000BDE0 /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		1AB70646184091130000BDE0 /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		1AB70616184090710000BDE0 /* SuperCard */ = {
 			isa = PBXGroup;
 			children = (
+				1AB70645184091130000BDE0 /* PlayingCardView.h */,
+				1AB70646184091130000BDE0 /* PlayingCardView.m */,
 				1AB7061F184090710000BDE0 /* SuperCardAppDelegate.h */,
 				1AB70620184090710000BDE0 /* SuperCardAppDelegate.m */,
 				1AB70622184090710000BDE0 /* Main.storyboard */,
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB70621184090710000BDE0 /* SuperCardAppDelegate.m in Sources */,
+				1AB70647184091130000BDE0 /* PlayingCardView.m in Sources */,
 				1AB7061D184090710000BDE0 /* main.m in Sources */,
 				1AB70627184090710000BDE0 /* SuperCardViewController.m in Sources */,
 			);
