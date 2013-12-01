@@ -18,7 +18,7 @@
 
 @synthesize faceCardScaleFactor = _faceCardScaleFactor;
 
-#define DEFAULT_FACECARD_SCALE_FACTOR 0.9
+#define DEFAULT_FACECARD_SCALE_FACTOR 0.85
 #define CORNER_RADIUS 12.0
 #define CORNER_TEXT_PADDING 2.0
 #define CORNER_SIZE_PERCETAGE 0.20
@@ -38,8 +38,7 @@
     [roundedRect stroke];
     
     if ([self isFaceUp]) {
-        [self drawCorners];
-        NSString * imageName = [NSString stringWithFormat:@"%@%@.jpg", [self rankAsString], self.suit];
+        NSString * imageName = [NSString stringWithFormat:@"%@%@.png", [self rankAsString], self.suit];
         UIImage * faceImage = [UIImage imageNamed:imageName];
         if (faceImage) {
             CGRect imageRect = CGRectInset(self.bounds, self.bounds.size.width * (1 - self.faceCardScaleFactor), self.bounds.size.height * (1 - self.faceCardScaleFactor));
@@ -47,8 +46,9 @@
         } else {
             [self drawPips];
         }
+        [self drawCorners];
     }else {
-        [[UIImage imageNamed:@"cardback.png"] drawInRect:self.bounds];
+        [[UIImage imageNamed:@"stanford.png"] drawInRect:self.bounds];
     }
 
 }

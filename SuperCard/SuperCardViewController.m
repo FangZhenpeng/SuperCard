@@ -18,7 +18,7 @@
 
 - (void) setPlayingCardView:(PlayingCardView *)playingCardView{
     _playingCardView = playingCardView;
-    playingCardView.rank = 9;
+    playingCardView.rank = 13;
     playingCardView.suit = @"♥";
     playingCardView.faceUp = YES;
     [playingCardView addGestureRecognizer:[[UIPinchGestureRecognizer alloc] initWithTarget:playingCardView action:@selector(pinch:)]];
